@@ -2,6 +2,10 @@
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCDD.Infrastructure.Engine", "UCDD.Infrastructure.Engine.csproj", "{143CF410-9AB7-4E06-80BC-CF10854DF53D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCDD.Core", "..\..\Core\UCDD.Core\UCDD.Core.csproj", "{AB14C024-5AC0-448A-AC90-D5FE29E87675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCDD.Test.Unit", "..\..\Test\Unit\UCDD.Test.Unit\UCDD.Test.Unit.csproj", "{E629B146-DE87-48DB-9AAD-B96AF3653BCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 	Debug|Any CPU = Debug|Any CPU
@@ -15,5 +19,17 @@ Global
 		{143CF410-9AB7-4E06-80BC-CF10854DF53D}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
 		{143CF410-9AB7-4E06-80BC-CF10854DF53D}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
 		{143CF410-9AB7-4E06-80BC-CF10854DF53D}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{AB14C024-5AC0-448A-AC90-D5FE29E87675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB14C024-5AC0-448A-AC90-D5FE29E87675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB14C024-5AC0-448A-AC90-D5FE29E87675}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB14C024-5AC0-448A-AC90-D5FE29E87675}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{AB14C024-5AC0-448A-AC90-D5FE29E87675}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB14C024-5AC0-448A-AC90-D5FE29E87675}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
+		{E629B146-DE87-48DB-9AAD-B96AF3653BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E629B146-DE87-48DB-9AAD-B96AF3653BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E629B146-DE87-48DB-9AAD-B96AF3653BCB}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E629B146-DE87-48DB-9AAD-B96AF3653BCB}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{E629B146-DE87-48DB-9AAD-B96AF3653BCB}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{E629B146-DE87-48DB-9AAD-B96AF3653BCB}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
