@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/game/Game.cs" type="Script" id=1]
 [ext_resource path="res://src/game/materials/Background.tres" type="Material" id=2]
 [ext_resource path="res://src/game/materials/Floor.tres" type="Material" id=3]
 [ext_resource path="res://src/game/shaders/uniform_color.tres" type="Shader" id=4]
+[ext_resource path="res://src/game/player/Player.cs" type="Script" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 960, 120 )
@@ -45,6 +46,7 @@ texture = SubResource( 2 )
 
 [node name="Player" type="KinematicBody2D" parent="."]
 position = Vector2( 600, 720 )
+script = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource( 3 )

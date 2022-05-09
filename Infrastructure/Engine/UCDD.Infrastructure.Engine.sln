@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCDD.Infrastrucutre.Engine", "UCDD.Infrastrucutre.Engine.csproj", "{143CF410-9AB7-4E06-80BC-CF10854DF53D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCDD.Infrastructure.Engine", "UCDD.Infrastructure.Engine.csproj", "{143CF410-9AB7-4E06-80BC-CF10854DF53D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
