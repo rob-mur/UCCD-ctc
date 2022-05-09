@@ -1,21 +1,33 @@
+using System;
 using NUnit.Framework;
 using UCDD.Core.UseCases;
+using UCDD.Core.UseCases.MovePlayer;
+using UCDD.Test.Unit.Common.Builders.RequestBuilders;
+using static NUnit.Framework.Interfaces.TestStatus;
 
 namespace UCDD.Test.Unit.UseCases;
 
 public class Tests
 {
-    private MovePlayerUseCase? _sut;
+    private readonly MovePlayerUseCase _useCase;
 
-    [SetUp]
-    public void Setup()
+    public Tests()
     {
-        _sut = new MovePlayerUseCase();
+        _useCase = new MovePlayerUseCase();
     }
+
 
     [Test]
-    public void Test1()
+    public void Velocity_should_follow_direction()
     {
-        Assert.Pass();
+        var request = MovePlayerRequestBuilder.MovePlayer()
+            .Direction(1)
+            .Velocity(0f)
+            .Build();
+
+        var response = _useCase.Handle(request);
+        
+        Assert.That(response.Velocity, Is.GreaterThan(0));
     }
+
 }

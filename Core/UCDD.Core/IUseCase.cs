@@ -1,6 +1,6 @@
 ﻿namespace UCDD.Core;
 
-public interface IUseCase
+public interface IUseCase<in TRequest,out TResponse>
 {
-    void Handle();
+    TResponse Handle(TRequest request);
 }
