@@ -4,4 +4,7 @@
     <AssemblyName>UCDD.Infrastructure.Engine</AssemblyName>
     <RootNamespace>UCDD.Infrastructure.Engine</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\UCDD.Core\UCDD.Core.csproj" />
+  </ItemGroup>
 </Project>

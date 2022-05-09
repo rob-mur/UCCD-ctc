@@ -1,9 +1,5 @@
-using System;
 using NUnit.Framework;
-using UCDD.Core.UseCases;
-using UCDD.Core.UseCases.MovePlayer;
 using UCDD.Test.Unit.Common.Builders.RequestBuilders;
-using static NUnit.Framework.Interfaces.TestStatus;
 
 namespace UCDD.Test.Unit.UseCases;
 

@@ -1,5 +1,4 @@
-﻿using UCDD.Core.UseCases.MovePlayer;
-
+﻿
 namespace UCDD.Test.Unit.Common.Builders.RequestBuilders;
 
 public class MovePlayerRequestBuilder
