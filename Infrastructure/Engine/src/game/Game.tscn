@@ -56,7 +56,7 @@ texture = SubResource( 2 )
 position = Vector2( 600, 720 )
 script = ExtResource( 5 )
 Speed = 1000.0
-Acceleration = 1000.0
+Acceleration = 2000.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource( 3 )
