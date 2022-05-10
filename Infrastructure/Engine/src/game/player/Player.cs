@@ -5,6 +5,9 @@ namespace UCDD.Infrastructure.Engine.game.player
 {
     public class Player : KinematicBody2D
     {
+        [Export] private float Speed = 100f;
+        [Export] private float Acceleration = 50f;
+        
         private readonly MovePlayerUseCase _movePlayer;
         private int _direction;
         private Vector2 _velocity;
@@ -24,7 +27,10 @@ namespace UCDD.Infrastructure.Engine.game.player
             var response = _movePlayer.Handle(new MovePlayerRequest
             {
                 Direction = _direction,
-                Velocity = _velocity.x
+                Velocity = _velocity.x,
+                Speed = Speed,
+                DeltaTime = delta,
+                Acceleration = Acceleration
             });
 
             _velocity = MoveAndSlide(new Vector2(response.Velocity, _velocity.y));

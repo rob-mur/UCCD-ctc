@@ -5,4 +5,10 @@
         <LangVersion>7.3</LangVersion>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Reference Include="GodotSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\Infrastructure\Engine\.mono\assemblies\Debug\GodotSharp.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
