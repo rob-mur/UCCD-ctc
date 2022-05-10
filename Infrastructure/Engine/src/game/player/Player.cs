@@ -1,5 +1,6 @@
 using System;
 using Godot;
+using UCDD.Core.UseCases.MovePlayer;
 
 namespace UCDD.Infrastructure.Engine.game.player
 {

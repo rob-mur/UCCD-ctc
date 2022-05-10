@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using UCDD.Core.UseCases.MovePlayer;
 using UCDD.Test.Unit.Common.Builders.RequestBuilders;
 
 namespace UCDD.Test.Unit.UseCases;
@@ -95,6 +96,36 @@ public class Tests
         var response = _useCase.Handle(request);
         
         Assert.That(response.Velocity, Is.LessThan(100f));
+    }
+    
+    [Test]
+    public void Should_accelerate_double_if_against_grain()
+    {
+        var request = MovePlayerRequestBuilder.MovePlayer()
+            .Direction(1)
+            .Velocity(-100f)
+            .DeltaTime(1f)
+            .Acceleration(50f)
+            .Build();
+        
+        var response = _useCase.Handle(request);
+        
+        Assert.That(response.Velocity, Is.EqualTo(0f));
+    }
+    
+    [Test]
+    public void Should_snap_to_zero()
+    {
+        var request = MovePlayerRequestBuilder.MovePlayer()
+            .Direction(0)
+            .Velocity(99f)
+            .DeltaTime(1f)
+            .Acceleration(100f)
+            .Build();
+        
+        var response = _useCase.Handle(request);
+        
+        Assert.That(response.Velocity, Is.EqualTo(0f));
     }
     
 }

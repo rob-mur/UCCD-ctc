@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/game/Game.cs" type="Script" id=1]
 [ext_resource path="res://src/game/materials/Background.tres" type="Material" id=2]
 [ext_resource path="res://src/game/materials/Floor.tres" type="Material" id=3]
 [ext_resource path="res://src/game/shaders/uniform_color.tres" type="Shader" id=4]
 [ext_resource path="res://src/game/player/Player.cs" type="Script" id=5]
+[ext_resource path="res://src/game/fps.gd" type="Script" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 960, 120 )
@@ -32,6 +33,13 @@ layer = -1
 material = ExtResource( 2 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="UI"]
+margin_right = 40.0
+margin_bottom = 14.0
+script = ExtResource( 6 )
 
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2( 960, 960 )
